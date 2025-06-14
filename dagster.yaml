@@ -66,7 +66,7 @@ run_queue:
       value: vsa
       limit: 1
     - key: remote
-      values: ukidss
+      value: ukidss
       limit: 1
     - key: remote
       value: vista
