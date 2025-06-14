@@ -1,27 +1,27 @@
 # persistent storage configs
-storage:
-  sqlite:
-    base_dir: data/sqlite
+# storage:
+#   sqlite:
+#     base_dir: data/
 
 compute_logs:
   config:
-    base_dir: data/compute_logs
+    base_dir: data/compute_logs/
 
 local_artifact_storage:
   config:
-    base_dir: data/artifact
+    base_dir: data/artifact/
 
 run_storage:
   config:
-    base_dir: data/history
+    base_dir: data/history/
 
 event_log_storage:
   config:
-    base_dir: data/event_log
+    base_dir: data/event_log/
 
 schedule_storage:
   config:
-    base_dir: data/schedule
+    base_dir: data/schedule/
 
 
 # other configs
