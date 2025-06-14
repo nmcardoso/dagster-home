@@ -40,12 +40,8 @@ telemetry:
 
 
 # concurrency configs
-concurrency:
-  pools:
-    granularity: run
-
 run_queue:
-  max_concurrent_runs: 15
+  max_concurrent_runs: 10
   tag_concurrency_limits:
     # remote queue
     - key: remote
