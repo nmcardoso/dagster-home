@@ -44,45 +44,45 @@ run_queue:
   max_concurrent_runs: 15
   tag_concurrency_limits:
     # remote queue
-    - key: 'remote/splus'
+    - key: 'remote_splus'
       limit: 2
-    - key: 'remote/datalab'
+    - key: 'remote_datalab'
       limit: 1
-    - key: 'remote/legacy'
+    - key: 'remote_legacy'
       limit: 1
-    - key: 'remote/skyserver'
+    - key: 'remote_skyserver'
       limit: 1
-    - key: 'remote/sdss'
+    - key: 'remote_sdss'
       limit: 1
-    - key: 'remote/wfau'
+    - key: 'remote_wfau'
       limit: 1
-    - key: 'remote/vsa'
+    - key: 'remote_vsa'
       limit: 1
-    - key: 'remote/ukidss'
+    - key: 'remote_ukidss'
       limit: 1
-    - key: 'remote/vista'
+    - key: 'remote_vista'
       limit: 1
-    - key: 'remote/vizier'
+    - key: 'remote_vizier'
       limit: 1
-    - key: 'remote/vizier/cds'
+    - key: 'remote_vizier_cds'
       limit: 1
-    - key: 'remote/vizier/unistra'
+    - key: 'remote_vizier_unistra'
       limit: 1
-    - key: 'remote/hips2fits'
+    - key: 'remote_hips2fits'
       limit: 1
 
     # computing queue
-    - key: 'crossmatch/intensive'
+    - key: 'crossmatch_intensive'
       limit: 1
-    - key: 'crossmatch/moderate'
+    - key: 'crossmatch_moderate'
       limit: 3
-    - key: 'compute/intensive'
+    - key: 'compute_intensive'
       limit: 1
-    - key: 'compute/moderate'
+    - key: 'compute_moderate'
       limit: 3
     
     # io queue
-    - key: 'io/intensive'
+    - key: 'io_intensive'
       limit: 1
-    - key: 'io/moderate'
+    - key: 'io_moderate'
       limit: 3
