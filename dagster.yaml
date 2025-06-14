@@ -1,0 +1,78 @@
+# persistent storage configs
+storage:
+  sqlite:
+    base_dir: data/sqlite
+
+compute_logs:
+  config:
+    base_dir: data/compute_logs
+
+local_artifact_storage:
+  config:
+    base_dir: data/artifact
+
+run_storage:
+  config:
+    base_dir: data/history
+
+event_log_storage:
+  config:
+    base_dir: data/event_log
+
+schedule_storage:
+  config:
+    base_dir: data/schedule
+
+
+# other configs
+telemetry:
+  enabled: false
+
+
+# concurrency configs
+run_queue:
+  max_concurrent_runs: 15
+  tag_concurrency_limits:
+    # remote queue
+    - key: 'remote/splus'
+      limit: 2
+    - key: 'remote/datalab'
+      limit: 1
+    - key: 'remote/legacy'
+      limit: 1
+    - key: 'remote/skyserver'
+      limit: 1
+    - key: 'remote/sdss'
+      limit: 1
+    - key: 'remote/wfau'
+      limit: 1
+    - key: 'remote/vsa'
+      limit: 1
+    - key: 'remote/ukidss'
+      limit: 1
+    - key: 'remote/vista'
+      limit: 1
+    - key: 'remote/vizier'
+      limit: 1
+    - key: 'remote/vizier/cds'
+      limit: 1
+    - key: 'remote/vizier/unistra'
+      limit: 1
+    - key: 'remote/hips2fits'
+      limit: 1
+
+    # computing queue
+    - key: 'crossmatch/intensive'
+      limit: 1
+    - key: 'crossmatch/moderate'
+      limit: 3
+    - key: 'compute/intensive'
+      limit: 1
+    - key: 'compute/moderate'
+      limit: 3
+    
+    # io queue
+    - key: 'io/intensive'
+      limit: 1
+    - key: 'io/moderate'
+      limit: 3

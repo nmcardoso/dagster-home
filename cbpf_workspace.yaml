@@ -1,0 +1,11 @@
+load_from:
+  - python_file:
+    relative_path: splusclusters/definitions.py
+    working_directory: /home/nmcardoso/repos/clusters
+    executable_path: /home/nmcardoso/miniconda3/envs/clusters/bin/python
+    location_name: SCALE
+  # - python_file:
+  #   relative_path: definitions.py
+  #   working_directory: /home/nmcardoso/repos/astrosimilarity
+  #   executable_path: /home/nmcardoso/miniconda3/envs/sim/bin/python
+  #   location_name: astrosimilarity
