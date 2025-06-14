@@ -1,8 +1,7 @@
 # persistent storage configs
-storage:
-  base_dir: data/
-  # sqlite:
-  #   base_dir: data/
+# storage:
+#   sqlite:
+#     base_dir: data/
 
 # compute_logs:
 #   module: dagster.core.storage.local_compute_log_manager
