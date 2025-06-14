@@ -40,49 +40,72 @@ telemetry:
 
 
 # concurrency configs
+concurrency:
+  pools:
+    granularity: run
+
 run_queue:
   max_concurrent_runs: 15
   tag_concurrency_limits:
     # remote queue
-    - key: 'remote_splus'
+    - key: remote
+      value: splus
       limit: 2
-    - key: 'remote_datalab'
+    - key: remote
+      value: datalab
       limit: 1
-    - key: 'remote_legacy'
+    - key: remote
+      value: legacy
       limit: 1
-    - key: 'remote_skyserver'
+    - key: remote
+      value: skyserver
       limit: 1
-    - key: 'remote_sdss'
+    - key: remote
+      value: sdss
       limit: 1
-    - key: 'remote_wfau'
+    - key: remote
+      value: wfau
       limit: 1
-    - key: 'remote_vsa'
+    - key: remote
+      value: vsa
       limit: 1
-    - key: 'remote_ukidss'
+    - key: remote
+      values: ukidss
       limit: 1
-    - key: 'remote_vista'
+    - key: remote
+      value: vista
       limit: 1
-    - key: 'remote_vizier'
+    - key: remote
+      value: vizier
       limit: 1
-    - key: 'remote_vizier_cds'
+    - key: remote
+      value: vizier_cds
       limit: 1
-    - key: 'remote_vizier_unistra'
+    - key: remote
+      value: vizier_unistra
       limit: 1
-    - key: 'remote_hips2fits'
+    - key: remote
+      value: hips2fits
       limit: 1
 
     # computing queue
-    - key: 'crossmatch_intensive'
+    - key: crossmatch
+      value: intensive
       limit: 1
-    - key: 'crossmatch_moderate'
+    - key: crossmatch
+      value: moderate
       limit: 3
-    - key: 'compute_intensive'
+    - key: compute
+      value: intensive
       limit: 1
-    - key: 'compute_moderate'
+    - key: compute
+      value: moderate
       limit: 3
     
     # io queue
-    - key: 'io_intensive'
+    - key: io
+      value: intensive
       limit: 1
-    - key: 'io_moderate'
+    - key: io
+      value: moderate
       limit: 3
