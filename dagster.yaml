@@ -1,37 +1,38 @@
 # persistent storage configs
-# storage:
-#   sqlite:
-#     base_dir: data/
+storage:
+  base_dir: data/
+  # sqlite:
+  #   base_dir: data/
 
-compute_logs:
-  module: dagster.core.storage.local_compute_log_manager
-  class: LocalComputeLogManager
-  config:
-    base_dir: data/compute_logs/
+# compute_logs:
+#   module: dagster.core.storage.local_compute_log_manager
+#   class: LocalComputeLogManager
+#   config:
+#     base_dir: data/compute_logs/
 
-local_artifact_storage:
-  module: dagster.core.storage.root
-  class: LocalArtifactStorage
-  config:
-    base_dir: data/artifact/
+# local_artifact_storage:
+#   module: dagster.core.storage.root
+#   class: LocalArtifactStorage
+#   config:
+#     base_dir: data/artifact/
 
-run_storage:
-  module: dagster.core.storage.runs
-  class: SqliteRunStorage
-  config:
-    base_dir: data/history/
+# run_storage:
+#   module: dagster.core.storage.runs
+#   class: SqliteRunStorage
+#   config:
+#     base_dir: data/history/
 
-event_log_storage:
-  module: dagster.core.storage.event_log
-  class: SqliteEventLogStorage
-  config:
-    base_dir: data/event_log/
+# event_log_storage:
+#   module: dagster.core.storage.event_log
+#   class: SqliteEventLogStorage
+#   config:
+#     base_dir: data/event_log/
 
-schedule_storage:
-  module: dagster.core.storage.schedules
-  class: SqliteScheduleStorage
-  config:
-    base_dir: data/schedule/
+# schedule_storage:
+#   module: dagster.core.storage.schedules
+#   class: SqliteScheduleStorage
+#   config:
+#     base_dir: data/schedule/
 
 
 # other configs
